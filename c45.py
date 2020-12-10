@@ -2,7 +2,7 @@
 
 import math
 import tree
-#import graphviz
+#from graphviz import *
 
 class C45:
 
@@ -120,7 +120,7 @@ class C45:
             d_tree=self.build_decision_tree_r(self.data,tree.Node("",1))
         else:
             d_tree=tree.Node(str(info[1][0]), 1.0)
-        d_tree.print_tree(d_tree)
+        return d_tree
     def build_decision_tree_r(self,data,d_tree):
         t_node=d_tree
         info =self.num_classes_in_data(data)
@@ -134,3 +134,9 @@ class C45:
             t_node.info=str(info[1][0])
 
         return t_node
+    
+    
+    #Uses Graphviz
+    def build_graph(self):
+        d_tree=self.build_decision_tree()
+        d_tree.tree_graph(d_tree)

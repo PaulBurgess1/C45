@@ -1,0 +1,39 @@
+digraph tree_graph {
+	"1_Split by petal length on interval 3.0" [label="Split by petal length on interval 3.0"]
+	"1.1_Iris-setosa" [label="Iris-setosa"]
+	"10_Split by petal width on interval 1.8" [label="Split by petal width on interval 1.8"]
+	"10.1_Split by petal length on interval 5.6" [label="Split by petal length on interval 5.6"]
+	"10.2_Split by sepal length on interval 4.9" [label="Split by sepal length on interval 4.9"]
+	"10.3_Iris-versicolor" [label="Iris-versicolor"]
+	"102.0_Split by petal width on interval 1.8" [label="Split by petal width on interval 1.8"]
+	"102.1_Split by sepal length on interval 5.0" [label="Split by sepal length on interval 5.0"]
+	"102.2_Iris-virginica" [label="Iris-virginica"]
+	"1021.0_Split by petal length on interval 5.1" [label="Split by petal length on interval 5.1"]
+	"1021.1_Split by petal length on interval 5.0" [label="Split by petal length on interval 5.0"]
+	"1021.2_Split by petal length on interval 5.0" [label="Split by petal length on interval 5.0"]
+	"1021.3_Iris-versicolor" [label="Iris-versicolor"]
+	"10212.0_Iris-virginica" [label="Iris-virginica"]
+	"10211.0_Iris-versicolor" [label="Iris-versicolor"]
+	"10210.0_Iris-virginica" [label="Iris-virginica"]
+	"1020.0_Iris-virginica" [label="Iris-virginica"]
+	"101.0_Iris-virginica" [label="Iris-virginica"]
+	"100_Iris-virginica" [label="Iris-virginica"]
+	"1_Split by petal length on interval 3.0" -> "1.1_Iris-setosa"
+	"1_Split by petal length on interval 3.0" -> "10_Split by petal width on interval 1.8"
+	"10_Split by petal width on interval 1.8" -> "10.1_Split by petal length on interval 5.6"
+	"10_Split by petal width on interval 1.8" -> "100_Iris-virginica"
+	"10.1_Split by petal length on interval 5.6" -> "10.2_Split by sepal length on interval 4.9"
+	"10.1_Split by petal length on interval 5.6" -> "101.0_Iris-virginica"
+	"10.2_Split by sepal length on interval 4.9" -> "10.3_Iris-versicolor"
+	"10.2_Split by sepal length on interval 4.9" -> "102.0_Split by petal width on interval 1.8"
+	"102.0_Split by petal width on interval 1.8" -> "102.1_Split by sepal length on interval 5.0"
+	"102.0_Split by petal width on interval 1.8" -> "1020.0_Iris-virginica"
+	"102.1_Split by sepal length on interval 5.0" -> "102.2_Iris-virginica"
+	"102.1_Split by sepal length on interval 5.0" -> "1021.0_Split by petal length on interval 5.1"
+	"1021.0_Split by petal length on interval 5.1" -> "1021.1_Split by petal length on interval 5.0"
+	"1021.0_Split by petal length on interval 5.1" -> "10210.0_Iris-virginica"
+	"1021.1_Split by petal length on interval 5.0" -> "1021.2_Split by petal length on interval 5.0"
+	"1021.1_Split by petal length on interval 5.0" -> "10211.0_Iris-versicolor"
+	"1021.2_Split by petal length on interval 5.0" -> "1021.3_Iris-versicolor"
+	"1021.2_Split by petal length on interval 5.0" -> "10212.0_Iris-virginica"
+}
